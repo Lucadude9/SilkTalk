@@ -29,6 +29,13 @@ header {
     font-weight: bold;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo img {
     width: 45px;
     height: 45px;
@@ -45,6 +52,7 @@ header {
     margin-left: 10px;
     border-radius: 4px;
     background-color: #98b2a4;
+    transition: 0.3s;
 }
 
 .auth-buttons a:hover {
@@ -63,6 +71,8 @@ header {
     max-width: 500px;
     padding: 10px;
     font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #999;
 }
 
 nav {
@@ -71,22 +81,50 @@ nav {
     gap: 30px;
     padding: 15px;
     background-color: #eeeeee;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
 }
 
 nav a {
-    text-decoration: none;
-    color: #222;
-    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: rgb(144, 96, 154);
+    background-color: #ddd;
 }
 
 main {
     min-height: 500px;
     padding: 30px;
+}
+
+.footer-links,
+.social-links {
+    margin-top: 10px;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    margin: 10px 0 20px 0;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #90609a;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #90609a;
 }
 
 footer {
@@ -96,3 +134,4 @@ footer {
     color: black;
     margin-top: 40px;
 }
+
