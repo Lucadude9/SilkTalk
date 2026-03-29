@@ -4,58 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SilkTalk - Home</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="image/favicon.png">
 </head>
 <body>
 
-<header>
-    <div class="top-header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="image/logo.png" alt="Weavers logo">
-                <span>SilkTalk</span>
-            </a>
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="image/background.mp4" type="video/mp4">
+    </video>
+
+    <div class="bg-overlay"></div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="top-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="image/logo.png" alt="Weavers logo">
+                        <span>SilkTalk</span>
+                    </a>
+                </div>
+
+                <div class="auth-buttons">
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search discussions, games, movies, comics...">
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="movies.html">Movies</a>
+                <a href="comics.html">Comics</a>
+                <a href="music.html">Music</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="auth-buttons">
-            <a href="login.html">Login</a>
-            <a href="register.html">Register</a>
+    <main class="site-main">
+        <section class="hero">
+            <div class="hero-text">
+                <p class="tagline">Pop Culture • Community • Discussion</p>
+                <h1>Welcome to SilkTalk</h1>
+                <p>
+                    SilkTalk is a place where people can explore and discuss games,
+                    movies, comics, and music in one shared space.
+                </p>
+                <p>
+                    Discover new favorites, share your opinions, and join conversations
+                    about the media you enjoy most.
+                </p>
+            </div>
+        </section>
+
+        <section class="feature-row">
+            <article class="feature-card">
+                <h3>Games</h3>
+                <p>Talk about trending releases, favorite classics, and upcoming titles.</p>
+            </article>
+
+            <article class="feature-card">
+                <h3>Movies</h3>
+                <p>Share reviews, reactions, and recommendations with other fans.</p>
+            </article>
+
+            <article class="feature-card">
+                <h3>Comics</h3>
+                <p>Discuss stories, characters, worlds, and the series you follow.</p>
+            </article>
+
+            <article class="feature-card">
+                <h3>Music</h3>
+                <p>Explore artists, albums, playlists, and songs worth talking about.</p>
+            </article>
+        </section>
+
+        <section class="home-extra">
+            <div class="extra-box">
+                <h2>About This Site</h2>
+                <p>
+                    SilkTalk was created as a pop culture discussion space where users
+                    can browse different categories and connect through shared interests.
+                </p>
+            </div>
+
+            <div class="extra-box">
+                <h2>Start Exploring</h2>
+                <p>
+                    Use the navigation above to move through each category and discover
+                    discussions in games, movies, comics, and music.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 SilkTalk | Weavers</p>
+
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <span>|</span>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <div class="social-links">
+                <a href="#">Instagram (Weavers)</a>
+                <span>|</span>
+                <a href="#">X (Weavers)</a>
+            </div>
         </div>
-    </div>
-
-    <div class="search-bar">
-        <input type="text" placeholder="Search">
-    </div>
-
-    <nav>
-        <a href="index.html" title="Go to the homepage">Home</a>
-        <a href="games.html" title="Click to see games discussions">Games</a>
-        <a href="movies.html" title="Click to see movie discussions">Movies</a>
-        <a href="comics.html" title="Click to see comic discussions">Comics</a>
-        <a href="music.html" title="Click to see music discussions">Music</a>
-    </nav>
-</header>
-
-<main>
-    <h1>Welcome to SilkTalk</h1>
-    <p>This is a pop culture discussion website where users can explore games, movies, comics, and music.</p>
-    <p>Use the navigation above to explore different categories.</p>
-</main>
-
-<footer>
-    <p>&copy; 2026 SilkTalk | Weavers</p>
-
-    <div class="footer-links">
-        <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact Us</a>
-    </div>
-
-    <div class="social-links">
-        <a href="#">Instagram (Weavers)</a> |
-        <a href="#">X (Weavers)</a>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>

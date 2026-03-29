@@ -1,0 +1,611 @@
+/* =========================================
+   1. RESET
+   Changes:
+   - Removes default browser spacing
+   - Makes sizing easier to control
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   2. BODY + SITE BACKGROUND
+   Changes:
+   - Main font for whole site
+   - Default text color
+   - Base page background
+========================================= */
+body {
+    font-family: Arial, sans-serif;
+    color: #f1eeee;
+    background-color: #141414;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   3. VIDEO BACKGROUND
+   Changes:
+   - Full-screen moving background video
+   - If background video size/position needs changes,
+     edit here
+========================================= */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* dark overlay above video so text stays readable */
+.bg-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 18, 20, 0.55);
+    z-index: -1;
+}
+
+/* =========================================
+   4. SHARED PAGE WIDTH
+   Changes:
+   - Controls how wide the content is
+   - Smaller width = more background visible
+   - Bigger width = less background visible
+========================================= */
+.header-inner,
+.site-main,
+.footer-inner {
+    width: 78%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   5. HEADER WRAPPER
+   Changes:
+   - Space above the header
+========================================= */
+.site-header {
+    padding-top: 24px;
+}
+
+/* =========================================
+   6. HEADER MAIN BOX
+   Changes:
+   - Whole header background color
+   - Border, rounded corners, shadow
+========================================= */
+.header-inner {
+    background: rgba(120, 114, 119, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(3px);
+}
+
+/* =========================================
+   7. TOP HEADER
+   Changes:
+   - Logo and login/register row
+   - Alignment and spacing
+========================================= */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 28px;
+    background: rgba(108, 102, 107, 0.82);
+}
+
+/* =========================================
+   8. LOGO
+   Changes:
+   - SilkTalk text size
+   - Logo image size
+   - Logo row spacing
+========================================= */
+.logo {
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #111;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: rgba(230, 224, 224, 0.75);
+    padding: 4px;
+}
+
+.logo span {
+    color: #161313;
+    letter-spacing: 0.4px;
+}
+
+/* =========================================
+   9. LOGIN / REGISTER BUTTONS
+   Changes:
+   - Button colors
+   - Button size
+   - Hover effect
+========================================= */
+.auth-buttons a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #6f4e7d;
+    background-color: #9cad9d;
+    border: 1px solid #7f8f81;
+    padding: 9px 16px;
+    margin-left: 10px;
+    border-radius: 8px;
+    transition: 0.25s;
+}
+
+.auth-buttons a:hover {
+    background-color: #899a8a;
+    color: #4f355a;
+    transform: translateY(-1px);
+}
+
+/* =========================================
+   10. SEARCH BAR
+   Changes:
+   - Search section background
+   - Search input size, color, spacing
+========================================= */
+.search-bar {
+    padding: 14px 28px;
+    background: rgba(213, 206, 206, 0.92);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(90, 85, 85, 0.18);
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 560px;
+    padding: 11px 14px;
+    font-size: 15px;
+    border: 1px solid #9a9191;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3eeee;
+    color: #222;
+}
+
+.search-bar input:focus {
+    border-color: #84668f;
+    box-shadow: 0 0 0 3px rgba(132, 102, 143, 0.15);
+}
+
+/* =========================================
+   11. NAVIGATION BAR
+   Changes:
+   - Home / Games / Movies / Comics / Music
+   - Link spacing and hover colors
+========================================= */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    background: rgba(196, 188, 188, 0.94);
+}
+
+nav a {
+    text-decoration: none;
+    color: #694777;
+    font-weight: bold;
+    padding: 9px 15px;
+    border-radius: 8px;
+    transition: 0.25s;
+}
+
+nav a:hover {
+    background-color: rgba(156, 172, 157, 0.7);
+    color: #40254a;
+}
+
+/* =========================================
+   12. MAIN WRAPPER
+   Changes:
+   - Space between header, content, footer
+========================================= */
+.site-main {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* =========================================
+   13. HOME PAGE HERO SECTION
+   Used in:
+   - index.html
+   Changes:
+   - Welcome box style
+   - Main intro box on homepage
+========================================= */
+.hero {
+    background: rgba(83, 77, 84, 0.84);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 6px solid #9a79a8;
+    border-radius: 14px;
+    padding: 36px 32px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(3px);
+    margin-bottom: 12px;
+}
+
+/* small text above welcome title */
+.tagline {
+    color: #d8c0e1;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 14px;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 19px;
+    color: #f0ebeb;
+    max-width: 850px;
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   14. HOME PAGE FEATURE CARDS
+   Used in:
+   - index.html
+   Changes:
+   - Games / Movies / Comics / Music cards
+   - Card spacing and hover effect
+========================================= */
+.feature-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.feature-card {
+    flex: 1 1 240px;
+    background: rgba(104, 97, 103, 0.84);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-left: 5px solid #8f709c;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(3px);
+    transition: 0.25s;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+    background: rgba(112, 105, 111, 0.9);
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    color: #f0d7f8;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    font-size: 15.5px;
+    color: #f0eaea;
+}
+
+/* =========================================
+   15. HOME PAGE LOWER BOXES
+   Used in:
+   - index.html
+   Changes:
+   - About This Site / Start Exploring boxes
+========================================= */
+.home-extra {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.extra-box {
+    background: rgba(83, 77, 84, 0.84);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(3px);
+}
+
+.extra-box h2 {
+    font-size: 25px;
+    color: #f2ddf8;
+    margin-bottom: 8px;
+}
+
+.extra-box p {
+    font-size: 16px;
+    color: #f0ebeb;
+}
+
+/* =========================================
+   16. GENERAL PAGE CONTENT BOX
+   Used in:
+   - games.html
+   - movies.html
+   - comics.html
+   - music.html
+   - about.html
+   - contact.html
+   Changes:
+   - Main content box for non-home pages
+========================================= */
+.page-content {
+    background: rgba(83, 77, 84, 0.84);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 6px solid #9a79a8;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(3px);
+}
+
+/* =========================================
+   17. BREADCRUMB
+   Used in:
+   - Games, Movies, Comics, Music, About, Contact
+   Example:
+   Home > Games
+========================================= */
+.breadcrumb {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #c9c3c3;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #d8c0e1;
+    font-weight: bold;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* =========================================
+   18. GENERAL PAGE TEXT
+   Used in:
+   - non-home pages
+   Changes:
+   - title size
+   - paragraph spacing
+========================================= */
+.page-content h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.page-content h2 {
+    font-size: 28px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #f2ddf8;
+}
+
+.page-content p {
+    font-size: 18px;
+    color: #f0ebeb;
+    margin-bottom: 10px;
+}
+
+.page-content ul,
+.page-content ol {
+    margin-left: 22px;
+    margin-bottom: 12px;
+}
+
+.page-content li {
+    margin-bottom: 8px;
+    color: #f0ebeb;
+}
+
+.page-content a {
+    color: #f0d7f8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page-content a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* =========================================
+   19. OPTIONAL CONTENT GRID
+   Used in:
+   - Games, Movies, Comics, Music pages later
+   Changes:
+   - 2-column content layout
+========================================= */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.content-card {
+    background: rgba(104, 97, 103, 0.84);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-left: 4px solid #8f709c;
+    border-radius: 10px;
+    padding: 18px;
+    transition: 0.25s;
+}
+
+.content-card:hover {
+    background: rgba(112, 105, 111, 0.9);
+    transform: translateY(-2px);
+}
+
+.content-card h3 {
+    font-size: 20px;
+    color: #f0d7f8;
+    margin-bottom: 6px;
+}
+
+.content-card p {
+    font-size: 15px;
+    color: #f0eaea;
+    margin-bottom: 0;
+}
+
+/* =========================================
+   20. FOOTER WRAPPER
+   Changes:
+   - Space below footer
+========================================= */
+.site-footer {
+    padding-bottom: 24px;
+}
+
+/* =========================================
+   21. FOOTER MAIN BOX
+   Changes:
+   - Footer box look
+   - Footer text and links
+========================================= */
+.footer-inner {
+    text-align: center;
+    background: rgba(120, 114, 119, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 22px 18px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(3px);
+}
+
+.footer-inner p {
+    color: #171313;
+    font-weight: bold;
+}
+
+.footer-links,
+.social-links {
+    margin-top: 10px;
+}
+
+.footer-inner a {
+    text-decoration: none;
+    color: #5c3c69;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.footer-inner a:hover {
+    color: #304a34;
+}
+
+.footer-inner span {
+    margin: 0 8px;
+    color: #2c2525;
+}
+
+/* =========================================
+   22. RESPONSIVE - TABLET
+   Changes:
+   - Makes layout fit better on smaller screens
+========================================= */
+@media (max-width: 900px) {
+    .header-inner,
+    .site-main,
+    .footer-inner {
+        width: 90%;
+    }
+
+    .top-header {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .home-extra,
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1,
+    .page-content h1 {
+        font-size: 34px;
+    }
+
+    .hero p,
+    .page-content p {
+        font-size: 16px;
+    }
+}
+
+/* =========================================
+   23. RESPONSIVE - MOBILE
+   Changes:
+   - Smaller spacing on phones
+========================================= */
+@media (max-width: 600px) {
+    .site-header {
+        padding-top: 16px;
+    }
+
+    .top-header,
+    .search-bar,
+    .hero,
+    .feature-card,
+    .extra-box,
+    .page-content,
+    .content-card,
+    .footer-inner {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .hero h1,
+    .page-content h1 {
+        font-size: 28px;
+    }
+
+    .auth-buttons a {
+        margin: 5px;
+    }
+}
