@@ -287,10 +287,14 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 12px;
     margin-bottom: 12px;
+    align-items: stretch;
 }
 
 .feature-card {
-    flex: 1 1 240px;
+    flex: 1 1 calc(50% - 6px);
+    max-width: calc(50% - 6px);
+    display: flex;
+    flex-direction: column;
     background: rgba(104, 97, 103, 0.84);
     border: 1px solid rgba(255, 255, 255, 0.07);
     border-left: 5px solid #8f709c;
@@ -313,6 +317,7 @@ nav a:hover {
 }
 
 .feature-card p {
+    flex-grow: 1;
     font-size: 15.5px;
     color: #f0eaea;
 }

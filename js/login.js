@@ -11,7 +11,7 @@ document.getElementById("loginBtn").addEventListener("click", function () {
         // Save login session
         localStorage.setItem("loggedInUser", email);
 
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     } else {
         alert("Invalid email or password");
     }
