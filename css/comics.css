@@ -1,0 +1,49 @@
+/* MAIN GRID LAYOUT */
+.comic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+/* INDIVIDUAL COMIC CARD */
+.comic-card {
+    text-decoration: none;
+    background: rgba(104, 97, 103, 0.85);
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.25s;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.comic-card:hover {
+    transform: translateY(-4px);
+}
+
+.comic-card img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    background-color: #111;
+    padding: 8px;
+}
+
+.comic-card h3 {
+    padding: 12px;
+    color: #f0d7f8;
+}
+
+/* RESPONSIVE TABLET TO CHANGE HOW MANY COMICS ARE IN A ROW IF WIDTH IS CHANGED */
+@media (max-width: 900px) {
+    .comic-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* RESPONSIVE TABLET TO CHANGE HOW MANY COMICS ARE IN A ROW IF WIDTH IS CHANGED */
+@media (max-width: 600px) {
+    .comic-grid {
+        grid-template-columns: 1fr;
+    }
+}
