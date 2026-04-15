@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail - SilkTalk</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/movies-detail.css">
+    <link rel="icon" type="image/png" href="../image/favicon.png">
+</head>
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="../image/background.mp4" type="video/mp4">
+</video>
+
+<div class="bg-overlay"></div>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="top-header">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../image/logo.png" alt="Weavers logo">
+                    <span>SilkTalk</span>
+                </a>
+            </div>
+
+            <div class="auth-buttons">
+                <a href="../login.html">Login</a>
+                <a href="../register.html">Register</a>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search discussions, games, movies, comics...">
+        </div>
+
+        <nav>
+                <a href="../index.html" title="Go to the homepage">Home</a>
+                <a href="../games.html" title="Click to see games discussions">Games</a>
+                <a href="../movies.html" title="Click to see movie discussions">Movies</a>
+                <a href="../comics.html" title="Click to see comic discussions">Comics</a>
+                <a href="../music.html" title="Click to see music discussions">Music</a>
+            </nav>
+    </div>
+</header>
+
+<main class="site-main">
+    <section class="page-content">
+        <p class="breadcrumb">
+            <a href="../index.html">Home</a> &gt;
+            <a href="../movies.html">Movies</a> &gt;
+            <span id="breadcrumb-name">Loading...</span>
+        </p>
+
+        <h1 id="movies-title">Loading...</h1>
+
+        <div class="movies-detail">
+            <div class="movies-image">
+                <img src="" alt="" id="movies-img">
+            </div>
+
+            <div class="comment-box">
+                <h2>Leave a Review</h2>
+                <textarea id="commentInput" placeholder="Write your review..."></textarea>
+                <label>Rating:</label>
+                <div class="star-rating" id="starRating">
+                    <img src="../image/blackstar.webp" data-value="1">
+                    <img src="../image/blackstar.webp" data-value="2">
+                    <img src="../image/blackstar.webp" data-value="3">
+                    <img src="../image/blackstar.webp" data-value="4">
+                    <img src="../image/blackstar.webp" data-value="5">
+                </div>
+                
+                <div id="button-container"></div>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 20px;">Reviews</h2>
+        <div id="comments" class="comments-section"></div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p>&copy; 2026 SilkTalk | Weavers</p>
+        <div class="footer-links">
+            <a href="../about.html">About Us</a>
+            <span>|</span>
+            <a href="../contact.html">Contact Us</a>
+        </div>
+        <div class="social-links">
+            <a href="#">Instagram (Weavers)</a>
+            <span>|</span>
+            <a href="#">X (Weavers)</a>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/movie-data.js"></script>
+<script src="../js/comment.js"></script>
+
+</body>
+</html>
