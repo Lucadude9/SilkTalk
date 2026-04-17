@@ -1,5 +1,5 @@
 /* =========================================
-   AUTH BOX (login/register container)
+   AUTH BOX (login/register form container)
 ========================================= */
 .auth-box {
     max-width: 420px;
@@ -18,7 +18,7 @@
     font-size: 15px;
 }
 
-/* BUTTON */
+/* FORM BUTTON (login/register page) */
 .auth-box button {
     width: 100%;
     padding: 12px;
@@ -49,4 +49,57 @@
 
 .auth-box a:hover {
     text-decoration: underline;
+}
+
+/* =========================================
+   HEADER AUTH (Login / Register / Logout)
+========================================= */
+
+/* Container */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Username */
+.welcome-user {
+    color: #f0d7f8;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Login / Register links */
+.auth-buttons a {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 6px;
+    background-color: #9cad9d;
+    color: #222;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.auth-buttons a:hover {
+    background-color: #899a8a;
+}
+
+/* Logout button (FIXED SIZE + LOOK) */
+.logout-btn {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: none;
+    background-color: #9cad9d; /* same as login for consistency */
+    color: #222;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+/* Hover */
+.logout-btn:hover {
+    background-color: #899a8a;
 }

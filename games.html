@@ -1,142 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Games - SilkTalk</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/game.css">
-    <link rel="icon" type="image/png" href="image/favicon.png">
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="icon" type="image/png" href="image/favicon.png" />
+  </head>
+  <body>
     <video autoplay muted loop playsinline id="bg-video">
-        <source src="image/background.mp4" type="video/mp4">
+      <source src="image/background.mp4" type="video/mp4" />
     </video>
 
     <div class="bg-overlay"></div>
 
     <header class="site-header">
-        <div class="header-inner">
-            <div class="top-header">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="image/logo.png" alt="Weavers logo">
-                        <span>SilkTalk</span>
-                    </a>
-                </div>
+      <div class="header-inner">
+        <div class="top-header">
+          <div class="logo">
+            <a href="index.html">
+              <img src="image/logo.png" alt="Weavers logo" />
+              <span>SilkTalk</span>
+            </a>
+          </div>
 
-                <div class="auth-buttons">
-                    <a href="login.html">Login</a>
-                    <a href="register.html">Register</a>
-                </div>
-            </div>
-
-            <div class="search-bar">
-                <input type="text" placeholder="Search discussions, games, movies, comics...">
-            </div>
-
-            <nav>
-                <a href="index.html" title="Go to the homepage">Home</a>
-                <a href="games.html" title="Click to see game discussions">Games</a>
-                <a href="movies.html" title="Click to see movie discussions">Movies</a>
-                <a href="comics.html" title="Click to see comic discussions">Comics</a>
-                <a href="music.html" title="Click to see music discussions">Music</a>
-            </nav>
+          <div class="auth-buttons" id="authArea">
+            <a href="login.html"><button>Login</button></a>
+            <a href="register.html"><button>Register</button></a>
+          </div>
         </div>
+
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search discussions, games, movies, comics..."
+          />
+        </div>
+
+        <nav>
+          <a href="index.html" title="Go to the homepage">Home</a>
+          <a href="games.html" title="Click to see game discussions">Games</a>
+          <a href="movies.html" title="Click to see movie discussions"
+            >Movies</a
+          >
+          <a href="comics.html" title="Click to see comic discussions"
+            >Comics</a
+          >
+          <a href="music.html" title="Click to see music discussions">Music</a>
+        </nav>
+      </div>
     </header>
 
     <main class="site-main">
-        <section class="page-content">
-            <p class="breadcrumb">
-                <a href="index.html">Home</a> &gt; Games
-            </p>
+      <section class="page-content">
+        <p class="breadcrumb"><a href="index.html">Home</a> &gt; Games</p>
 
-            <h1>Games</h1>
-            <p>Discover, discuss, and review your favorite games with the SilkTalk community.</p>
+        <h1>Games</h1>
+        <p>
+          Discover, discuss, and review your favorite games with the SilkTalk
+          community.
+        </p>
 
-            <div class="games-grid">
-                <a href="games/game.html?id=lop" class="games-card">
-                    <img src="games-images/lop.jpg" alt="Lies of P">
-                    <h3>Lies of P</h3>
-                </a>
+        <div class="games-grid">
+          <a href="games/game.html?id=lop" class="games-card">
+            <img src="games-images/lop.jpg" alt="Lies of P" />
+            <h3>Lies of P</h3>
+          </a>
 
-                <a href="games/game.html?id=noexistence" class="games-card">
-                    <img src="games-images/noexistence.png" alt="NoExistence">
-                    <h3>The NOexistenceN of you AND me</h3>
-                </a>
+          <a href="games/game.html?id=noexistence" class="games-card">
+            <img src="games-images/noexistence.png" alt="NoExistence" />
+            <h3>The NOexistenceN of you AND me</h3>
+          </a>
 
-                <a href="games/game.html?id=wwm" class="games-card">
-                    <img src="games-images/wwm.jpg" alt="Where Wind Meet">
-                    <h3>Where Wind Meet</h3>
-                </a>
+          <a href="games/game.html?id=wwm" class="games-card">
+            <img src="games-images/wwm.jpg" alt="Where Wind Meet" />
+            <h3>Where Wind Meet</h3>
+          </a>
 
-                <a href="games/game.html?id=minecraft" class="games-card">
-                    <img src="games-images/mc.jpeg" alt="Minecraft">
-                    <h3>Minecraft</h3>
-                </a>
+          <a href="games/game.html?id=minecraft" class="games-card">
+            <img src="games-images/mc.jpeg" alt="Minecraft" />
+            <h3>Minecraft</h3>
+          </a>
 
-                <a href="games/game.html?id=fortnite" class="games-card">
-                    <img src="games-images/pgr.jpg" alt="Punishing Gray Raven">
-                    <h3>Punishing Gray Raven</h3>
-                </a>
+          <a href="games/game.html?id=pgr" class="games-card">
+            <img src="games-images/pgr.jpg" alt="Punishing Gray Raven" />
+            <h3>Punishing Gray Raven</h3>
+          </a>
 
-                <a href="games/game.html?id=valorant" class="games-card">
-                    <img src="games-images/subnautica.png" alt="Subnautica">
-                    <h3>Subnautica</h3>
-                </a>
+          <a href="games/game.html?id=subnautica" class="games-card">
+            <img src="games-images/subnautica.png" alt="Subnautica" />
+            <h3>Subnautica</h3>
+          </a>
 
-                <a href="games/game.html?id=leagueoflegends" class="games-card">
-                    <img src="games-images/gow.jpg" alt="God of War">
-                    <h3>God of War</h3>
-                </a>
+          <a href="games/game.html?id=gow" class="games-card">
+            <img src="games-images/gow.jpg" alt="God of War" />
+            <h3>God of War</h3>
+          </a>
 
-                <a href="games/game.html?id=godofwar" class="games-card">
-                    <img src="games-images/warframe.jpg" alt="Warframe">
-                    <h3>Warframe</h3>
-                </a>
+          <a href="games/game.html?id=warframe" class="games-card">
+            <img src="games-images/warframe.jpg" alt="Warframe" />
+            <h3>Warframe</h3>
+          </a>
 
-                <a href="games/game.html?id=spiderman2" class="games-card">
-                    <img src="games-images/miles.png" alt="Marvel's Spider-Man: Miles Morales">
-                    <h3>Marvel's Spider-Man: Miles Morales</h3>
-                </a>
+          <a href="games/game.html?id=miles" class="games-card">
+            <img
+              src="games-images/miles.png"
+              alt="Marvel's Spider-Man: Miles Morales"
+            />
+            <h3>Marvel's Spider-Man: Miles Morales</h3>
+          </a>
 
-                <a href="games/game.html?id=firered" class="games-card">
-                    <img src="games-images/firered.png" alt="Pokemon: Fire Red/Leaf Green ">
-                    <h3>Pokemon: Fire Red/Leaf Green</h3>
-                </a>
+          <a href="games/game.html?id=firered" class="games-card">
+            <img
+              src="games-images/firered.png"
+              alt="Pokemon: Fire Red/Leaf Green "
+            />
+            <h3>Pokemon: Fire Red/Leaf Green</h3>
+          </a>
 
-                <a href="games/game.html?id=rivals" class="games-card">
-                    <img src="games-images/rivals.png" alt="Marvel Rivals">
-                    <h3>Marvel Rivals</h3>
-                </a>
+          <a href="games/game.html?id=rivals" class="games-card">
+            <img src="games-images/rivals.png" alt="Marvel Rivals" />
+            <h3>Marvel Rivals</h3>
+          </a>
 
-                <a href="games/game.html?id=guardiantales.jpg" class="games-card">
-                    <img src="games-images/guardiantales.jpg" alt="Guardian Tales">
-                    <h3>Guardian Tales</h3>
-                </a>
-            </div>
-
-        </section>
+          <a href="games/game.html?id=roblox" class="games-card">
+            <img src="games-images/roblox.png" alt="Roblox" />
+            <h3>Roblox</h3>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-        <div class="footer-inner">
-            <p>&copy; 2026 SilkTalk | Weavers</p>
+      <div class="footer-inner">
+        <p>&copy; 2026 SilkTalk | Weavers</p>
 
-            <div class="footer-links">
-                <a href="about.html">About Us</a>
-                <span>|</span>
-                <a href="contact.html">Contact Us</a>
-            </div>
-
-            <div class="social-links">
-                <a href="#">Instagram (Weavers)</a>
-                <span>|</span>
-                <a href="#">X (Weavers)</a>
-            </div>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <span>|</span>
+          <a href="contact.html">Contact Us</a>
         </div>
-    </footer>
 
-</body>
+        <div class="social-links">
+          <a href="#">Instagram (Weavers)</a>
+          <span>|</span>
+          <a href="#">X (Weavers)</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/auth.js"></script>
+  </body>
 </html>

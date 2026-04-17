@@ -1,171 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comics - SilkTalk</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/comics.css">
-    <link rel="icon" type="image/png" href="image/favicon.png">
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/comics.css" />
+    <link rel="icon" type="image/png" href="image/favicon.png" />
+  </head>
+  <body>
     <video autoplay muted loop playsinline id="bg-video">
-        <source src="image/background.mp4" type="video/mp4">
+      <source src="image/background.mp4" type="video/mp4" />
     </video>
 
     <div class="bg-overlay"></div>
 
     <header class="site-header">
-        <div class="header-inner">
-            <div class="top-header">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="image/logo.png" alt="Weavers logo">
-                        <span>SilkTalk</span>
-                    </a>
-                </div>
+      <div class="header-inner">
+        <div class="top-header">
+          <div class="logo">
+            <a href="index.html">
+              <img src="image/logo.png" alt="Weavers logo" />
+              <span>SilkTalk</span>
+            </a>
+          </div>
 
-                <div class="auth-buttons">
-                    <a href="login.html">Login</a>
-                    <a href="register.html">Register</a>
-                </div>
-            </div>
-
-            <div class="search-bar">
-                <input type="text" placeholder="Search discussions, games, movies, comics...">
-            </div>
-
-            <nav>
-                <a href="index.html" title="Go to the homepage">Home</a>
-                <a href="games.html" title="Click to see games discussions">Games</a>
-                <a href="movies.html" title="Click to see movie discussions">Movies</a>
-                <a href="comics.html" title="Click to see comic discussions">Comics</a>
-                <a href="music.html" title="Click to see music discussions">Music</a>
-            </nav>
+          <div class="auth-buttons" id="authArea">
+            <a href="login.html"><button>Login</button></a>
+            <a href="register.html"><button>Register</button></a>
+          </div>
         </div>
+
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search discussions, games, movies, comics..."
+          />
+        </div>
+
+        <nav>
+          <a href="index.html" title="Go to the homepage">Home</a>
+          <a href="games.html" title="Click to see games discussions">Games</a>
+          <a href="movies.html" title="Click to see movie discussions"
+            >Movies</a
+          >
+          <a href="comics.html" title="Click to see comic discussions"
+            >Comics</a
+          >
+          <a href="music.html" title="Click to see music discussions">Music</a>
+        </nav>
+      </div>
     </header>
 
     <main class="site-main">
-        <section class="page-content">
-            <p class="breadcrumb">
-                <a href="index.html">Home</a> &gt; Comics
-            </p>
+      <section class="page-content">
+        <p class="breadcrumb"><a href="index.html">Home</a> &gt; Comics</p>
 
-            <h1>Comics</h1>
-            <p>Discuss and review your favorite comics here.</p>
-            
-<div class="comic-grid">
-    <a href="comics/comic.html?id=batman" class="comic-card">
-        <img src="image/batman.jpg" alt="Absolute Batman">
-        <h3>Absolute Batman</h3>
-    </a>
+        <h1>Comics</h1>
+        <p>Discuss and review your favorite comics here.</p>
 
-    <a href="comics/comic.html?id=superman" class="comic-card">
-        <img src="image/superman.jpg" alt="Absolute Superman">
-        <h3>Absolute Superman</h3>
-    </a>
+        <div class="comic-grid">
+          <a href="comics/comic.html?id=batman" class="comic-card">
+            <img src="image/batman.jpg" alt="Absolute Batman" />
+            <h3>Absolute Batman</h3>
+          </a>
 
-    <a href="comics/comic.html?id=wonderwoman" class="comic-card">
-        <img src="image/wonderwoman.jpg" alt="Absolute Wonder Woman">
-        <h3>Absolute Wonder Woman</h3>
-    </a>
+          <a href="comics/comic.html?id=superman" class="comic-card">
+            <img src="image/superman.jpg" alt="Absolute Superman" />
+            <h3>Absolute Superman</h3>
+          </a>
 
-    <a href="comics/comic.html?id=avengers" class="comic-card">
-        <img src="image/avengers.jpg" alt="Avengers">
-        <h3>Avengers</h3>
-    </a>
+          <a href="comics/comic.html?id=wonderwoman" class="comic-card">
+            <img src="image/wonderwoman.jpg" alt="Absolute Wonder Woman" />
+            <h3>Absolute Wonder Woman</h3>
+          </a>
 
-    <a href="comics/comic.html?id=daredevil" class="comic-card">
-        <img src="image/daredevil.jpg" alt="Daredevil">
-        <h3>Daredevil</h3>
-    </a>
+          <a href="comics/comic.html?id=avengers" class="comic-card">
+            <img src="image/avengers.jpg" alt="Avengers" />
+            <h3>Avengers</h3>
+          </a>
 
-    <a href="comics/comic.html?id=supermanspiderman" class="comic-card">
-        <img src="image/supermanspiderman.jpg" alt="DC/Marvel Superman Spider-man">
-        <h3>DC/Marvel Superman Spider-man</h3>
-    </a>
+          <a href="comics/comic.html?id=daredevil" class="comic-card">
+            <img src="image/daredevil.jpg" alt="Daredevil" />
+            <h3>Daredevil</h3>
+          </a>
 
-    <a href="comics/comic.html?id=fantasticfour" class="comic-card">
-        <img src="image/fantasticfour.jpg" alt="Fantastic Four">
-        <h3>Fantastic Four</h3>
-    </a>
+          <a href="comics/comic.html?id=supermanspiderman" class="comic-card">
+            <img
+              src="image/supermanspiderman.jpg"
+              alt="DC/Marvel Superman Spider-man"
+            />
+            <h3>DC/Marvel Superman Spider-man</h3>
+          </a>
 
-    <a href="comics/comic.html?id=flash" class="comic-card">
-        <img src="image/flash.jpg" alt="Flash">
-        <h3>Flash</h3>
-    </a>
+          <a href="comics/comic.html?id=fantasticfour" class="comic-card">
+            <img src="image/fantasticfour.jpg" alt="Fantastic Four" />
+            <h3>Fantastic Four</h3>
+          </a>
 
-    <a href="comics/comic.html?id=ironman" class="comic-card">
-        <img src="image/ironman.jpg" alt="Iron Man">
-        <h3>Iron Man</h3>
-    </a>
+          <a href="comics/comic.html?id=flash" class="comic-card">
+            <img src="image/flash.jpg" alt="Flash" />
+            <h3>Flash</h3>
+          </a>
 
-    <a href="comics/comic.html?id=justiceleague" class="comic-card">
-        <img src="image/justiceleague.jpg" alt="Justice League">
-        <h3>Justice League</h3>
-    </a>
+          <a href="comics/comic.html?id=ironman" class="comic-card">
+            <img src="image/ironman.jpg" alt="Iron Man" />
+            <h3>Iron Man</h3>
+          </a>
 
-    <a href="comics/comic.html?id=nightwing" class="comic-card">
-        <img src="image/nightwing.jpg" alt="Nightwing">
-        <h3>Nightwing</h3>
-    </a>
+          <a href="comics/comic.html?id=justiceleague" class="comic-card">
+            <img src="image/justiceleague.jpg" alt="Justice League" />
+            <h3>Justice League</h3>
+          </a>
 
-    <a href="comics/comic.html?id=rogue" class="comic-card">
-        <img src="image/rogue.jpg" alt="Rogue">
-        <h3>Rogue</h3>
-    </a>
+          <a href="comics/comic.html?id=nightwing" class="comic-card">
+            <img src="image/nightwing.jpg" alt="Nightwing" />
+            <h3>Nightwing</h3>
+          </a>
 
-    <a href="comics/comic.html?id=sorcerersupreme" class="comic-card">
-        <img src="image/sorcerersupreme.jpg" alt="Sorcerer Supreme">
-        <h3>Sorcerer Supreme</h3>
-    </a>
+          <a href="comics/comic.html?id=rogue" class="comic-card">
+            <img src="image/rogue.jpg" alt="Rogue" />
+            <h3>Rogue</h3>
+          </a>
 
-    <a href="comics/comic.html?id=ninjaturtles" class="comic-card">
-        <img src="image/ninjaturtles.jpg" alt="Teenage Mutant Ninja Turtles">
-        <h3>Teenage Mutant Ninja Turtles</h3>
-    </a>
+          <a href="comics/comic.html?id=sorcerersupreme" class="comic-card">
+            <img src="image/sorcerersupreme.jpg" alt="Sorcerer Supreme" />
+            <h3>Sorcerer Supreme</h3>
+          </a>
 
-    <a href="comics/comic.html?id=transformers" class="comic-card">
-        <img src="image/transformers.jpg" alt="Transformers">
-        <h3>Transformers</h3>
-    </a>
+          <a href="comics/comic.html?id=ninjaturtles" class="comic-card">
+            <img
+              src="image/ninjaturtles.jpg"
+              alt="Teenage Mutant Ninja Turtles"
+            />
+            <h3>Teenage Mutant Ninja Turtles</h3>
+          </a>
 
-    <a href="comics/comic.html?id=spiderman" class="comic-card">
-        <img src="image/spiderman.jpg" alt="Ultimate Spider-Man">
-        <h3>Ultimate Spider-Man</h3>
-    </a>
+          <a href="comics/comic.html?id=transformers" class="comic-card">
+            <img src="image/transformers.jpg" alt="Transformers" />
+            <h3>Transformers</h3>
+          </a>
 
-    <a href="comics/comic.html?id=uncannyxmen" class="comic-card">
-        <img src="image/uncannyxmen.jpg" alt="Uncanny X-Men">
-        <h3>Uncanny X-Men</h3>
-    </a>
+          <a href="comics/comic.html?id=spiderman" class="comic-card">
+            <img src="image/spiderman.jpg" alt="Ultimate Spider-Man" />
+            <h3>Ultimate Spider-Man</h3>
+          </a>
 
-    <a href="comics/comic.html?id=wolverine" class="comic-card">
-        <img src="image/wolverine.jpg" alt="Wolverine">
-        <h3>Wolverine</h3>
-    </a>
-</div>
-        </section>
+          <a href="comics/comic.html?id=uncannyxmen" class="comic-card">
+            <img src="image/uncannyxmen.jpg" alt="Uncanny X-Men" />
+            <h3>Uncanny X-Men</h3>
+          </a>
+
+          <a href="comics/comic.html?id=wolverine" class="comic-card">
+            <img src="image/wolverine.jpg" alt="Wolverine" />
+            <h3>Wolverine</h3>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-        <div class="footer-inner">
-            <p>&copy; 2026 SilkTalk | Weavers</p>
+      <div class="footer-inner">
+        <p>&copy; 2026 SilkTalk | Weavers</p>
 
-            <div class="footer-links">
-                <a href="about.html">About Us</a>
-                <span>|</span>
-                <a href="contact.html">Contact Us</a>
-            </div>
-
-            <div class="social-links">
-                <a href="#">Instagram (Weavers)</a>
-                <span>|</span>
-                <a href="#">X (Weavers)</a>
-            </div>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <span>|</span>
+          <a href="contact.html">Contact Us</a>
         </div>
-    </footer>
 
-</body>
+        <div class="social-links">
+          <a href="#">Instagram (Weavers)</a>
+          <span>|</span>
+          <a href="#">X (Weavers)</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/auth.js"></script>
+  </body>
 </html>
